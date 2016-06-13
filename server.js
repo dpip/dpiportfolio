@@ -2,6 +2,7 @@ var express = require('express');
 var nodemailer = require("nodemailer");
 var app = express();
 var smtpTransport = require("nodemailer-smtp-transport")
+
 /*
     Here we are configuring our SMTP Server details.
     STMP is mail server which is responsible for sending and recieving email.
@@ -15,10 +16,12 @@ app.use(function (req, res, next) {
     next();
 });
 
+// previous port was 587 smtp recommends 25
+
 var smtpTransport = nodemailer.createTransport(smtpTransport({
-    host : "Gmail.com",
+    service : "Gmail.com",
     secureConnection : false,
-    port: 587,
+    port: 465,
     auth : {
         user : "dpip.nc@gmail.com",
         pass : "Adventum1"
@@ -31,6 +34,7 @@ var smtpTransport = nodemailer.createTransport(smtpTransport({
 
 app.get('/send',function(req,res){
     var mailOptions={
+        from : req.query.name + req.query.email,
         to : req.query.to,
         subject : req.query.subject,
         text : req.query.text
