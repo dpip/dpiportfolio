@@ -1,0 +1,21 @@
+#about-wrapper {
+  height: 1000px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1abc9c; }
+  #about-wrapper .about-dilb {
+    display: inline-block; }
+  #about-wrapper #bigMe {
+    height: 400px;
+    width: 200px;
+    border: 1px solid black; }
+  #about-wrapper #media {
+    border: 1px solid blue;
+    height: 200px;
+    width: 600px;
+    margin-top: 0; }
+
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,143 @@
+#work-wrap {
+  height: 1000px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1abc9c; }
+  #work-wrap #back-home {
+    position: fixed;
+    left: 0;
+    top: 90px;
+    width: 50px;
+    height: 100px;
+    border: 1px solid #1abc9c; }
+    #work-wrap #back-home ul {
+      margin-left: -40px; }
+  #work-wrap #work-title {
+    font-size: 25px;
+    margin-top: 2em; }
+  #work-wrap #trindy-work {
+    position: absolute;
+    left: 110px;
+    top: 90px; }
+  #work-wrap .future-works-wrap {
+    margin-top: 7px;
+    margin-right: 60px;
+    float: right; }
+    #work-wrap .future-works-wrap .future-works {
+      height: 280px;
+      width: 400px;
+      border: 1px solid black;
+      list-style: none;
+      margin: 35px; }
+
+#about-wrapper {
+  height: 1000px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1abc9c; }
+  #about-wrapper .about-dilb {
+    display: inline-block; }
+  #about-wrapper #bigMe {
+    height: 400px;
+    width: 200px;
+    border: 1px solid black; }
+  #about-wrapper #media {
+    border: 1px solid blue;
+    height: 200px;
+    width: 600px;
+    margin-top: 0; }
+
+html, body {
+  height: 100%;
+  background: #1abc9c;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-align: center; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: inherit;
+  text-decoration: inherit; }
+
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  display: block;
+  opacity: .9;
+  background-color: white;
+  z-index: 99;
+  text-align: center; }
+
+#loading-image {
+  position: absolute;
+  top: 358px;
+  left: 48.7%;
+  z-index: 600; }
+
+#about {
+  font-size: 20px;
+  letter-spacing: .15em;
+  cursor: pointer;
+  position: absolute;
+  top: 2.2em;
+  left: 43.8%;
+  width: 140px;
+  height: 26px;
+  padding-top: 3px;
+  border: 3px solid #1abc9c; }
+
+.hover-top-and-bottom {
+  border: 2px solid white; }
+
+.front-and-center {
+  display: block;
+  margin-top: 21.5em; }
+
+#Daniel-Pipkin {
+  font-family: 'Lato', sans-serif;
+  font-size: 46px;
+  font-weight: 800;
+  cursor: pointer;
+  margin: 6px; }
+
+#Front-end {
+  font-size: 28px;
+  letter-spacing: .15em;
+  font-weight: 450;
+  font-size: 20px;
+  cursor: pointer; }
+
+.work-icon {
+  display: none; }
+
+.fa-briefcase {
+  font-size: 160px !important;
+  position: absolute;
+  bottom: .6em;
+  left: 43%;
+  display: none; }
+
+#work {
+  position: absolute;
+  bottom: 2.2em;
+  left: 43.8%;
+  font-size: 20px;
+  letter-spacing: .15em;
+  cursor: pointer;
+  width: 140px;
+  height: 26px;
+  padding-top: 3px;
+  border: 3px solid #1abc9c; }
+
+/*# sourceMappingURL=style.css.map */

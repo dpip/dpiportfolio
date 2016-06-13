@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+          <!-- Styles -->
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css">
+          <!-- Hosted Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-route.js"></script>
+    <!-- <script src="server.js"></script> -->
+    <!-- <script src="bundle.js"></script> -->
+
+   </head>
+
+                          <script>
+                                $(window).load(function() {
+                                  $('#loading').fadeOut(200);
+                                });
+                          </script>
+
+      <div id = "loading">
+        <img id="loading-image" src = "assets/images/ajax-loader.gif" alt="loading..." height="30px" width="30px">
+      </div>
+
+      <body ng-app="dpip">
+
+        <div ng-view> </div>
+
+        <script src="assets/js/route.js"></script>
+        <script src="assets/js/land.js"></script>
+        <script src="assets/js/about.js"></script>
+        <script src="assets/js/work.js"></script>
+
+
+      </body>
+
+  </html>
