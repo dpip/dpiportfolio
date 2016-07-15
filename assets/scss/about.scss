@@ -1,3 +1,6 @@
+
+
+
 #about-wrapper {
 
 
@@ -8,20 +11,104 @@
   left: 0;
   top: 0;
   color: #1abc9c;
+  // display: flex;
+      #pip {
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 100%;
+        background-color: white;
+      }
 
+      .fa {
+        font-size: 50px;
+        margin-top: 30px;
+      }
+
+      #via {
+        padding-bottom: 20px;
+      }
       .about-dilb {
         display: inline-block;
       }
       #bigMe {
-        height: 400px;
-        width: 200px;
+        height: 100%;
         border: 1px solid black;
+        background-color: red;
+      }
+      #bio-container {
+        border: 1px solid green;
       }
       #media {
+        position: absolute;
         border: 1px solid blue;
-        height: 200px;
-        width: 600px;
-        margin-top: 0;
+        width: 50%;
+        display: table;
+        right: 0;
+        top: 6em;
+
+
+          .media-icon {
+            display: table-cell;
+            height: 100px;
+            width: 180px;
+            font-size: 70px
+            // display: inline-block;
+          }
       }
+
+      #contact-container {
+
+        position: absolute;
+        bottom: 0;
+
+          .nodemailer-field {
+            display: block;
+            border-radius: .4em;
+            width: 60%;
+            margin-left: 20%;
+            margin-bottom: 40px;
+            font-size: 30px;
+          }
+
+          input {
+            // text-align: center;
+            border: 1px solid black;
+            outline: none;
+          }
+
+          textarea {
+                overflow: auto;
+                outline: none;
+
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+
+              }
+
+
+
+
+
+          #name {
+
+          }
+
+          #email {
+
+          }
+
+          #content {
+
+          }
+
+          #send-email {
+
+          }
+
+      }
+
+
 
 }

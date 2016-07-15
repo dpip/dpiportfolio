@@ -1,0 +1,33 @@
+@media (max-width: 620px) {
+  #about {
+    margin-left: -40px; }
+
+  #work {
+    margin-left: -40px; }
+
+  .work-icon {
+    margin-left: -40px; }
+
+  #look-at-me {
+    margin-left: -40px; } }
+#land-wrap {
+  background-color: #1abc9c; }
+
+#look-at-me {
+  position: absolute;
+  top: 100px;
+  left: 43.5%;
+  font-size: 160px; }
+
+.work-icon {
+  font-size: 160px !important;
+  position: absolute;
+  bottom: .6em;
+  left: 43%;
+  display: none; }
+
+.front-and-center {
+  display: block;
+  margin-top: 21.5em; }
+
+/*# sourceMappingURL=land.css.map */

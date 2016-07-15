@@ -1,17 +1,32 @@
+<div id = "pip"> What's pip up to?</div>
+
 <div id ="about-wrapper">
 
 
-  <div class = "about-dilb" id = "bigMe"></div>
-  <div class = "about-dilb" id = "media"></div>
+  <div class = "about-dilb" id = "bigMe">
+    <div id = "bio-container">
+      blah blah balaljfadhksdjvf
+    </div>
+  </div>
+
+  <div class = "about-dilb" id = "media">
+
+    <div class = "media-icon"><img class = "fa" src = "assets/images/8tracks.png" width = "60px" height = "60px"></img></div>
+    <div class = "media-icon"><i class="fa fa-instagram" aria-hidden="true" ></i></div>
+    <div class = "media-icon"><i class="fa fa-linkedin" aria-hidden="true" ></i></div>
+    <div class = "media-icon"><i class="fa fa-twitter" aria-hidden="true" ></i></div>
+
+  </div>
 
   <div id="contact-container">
-      <h1>Contact</h1>
-        <input id="name" type="text" placeholder="Your Name" />
-          <input id="email" type="email" placeholder="Your Email" />
-          <input id="subject" type="text" placeholder="Subject" />
-          <textarea id="content" cols="40" rows="5" placeholder="Write what you want to send"></textarea>
-        <button id="send_email">Send Email</button>
-      <span id="message"></span>
+      <div>CONTACT</div>
+      <div id = "via"> Via the wonders of Angular and Node.Js</div>
+        <input id="name"  class = "nodemailer-field" type="text" placeholder="&nbsp; What's Your Name? " />
+          <input id="email"  class = "nodemailer-field" type="email" placeholder="&nbsp; Your Email Address " />
+          <!-- <input id="subject"  class = "nodemailer-field" type="text" placeholder="Subject" /> -->
+          <textarea id="content"  class = "nodemailer-field" cols="40" rows="5" placeholder="&nbsp; Say Hi!"></textarea>
+        <button id="send_email" class = "nodemailer-field" >Send</button>
+      <span id="message" class = "nodemailer-field" ></span>
   </div>
 
 </div>

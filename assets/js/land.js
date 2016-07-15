@@ -3,7 +3,7 @@ dpip.controller( 'LandController', function ($scope) {
 
     $( document ).ready(function(){
 
-      console.log("here's the fun part!");
+      console.log("hire me!");
 
       $('#work').hover(function(){
 
@@ -18,11 +18,18 @@ dpip.controller( 'LandController', function ($scope) {
       $('#about').hover(function(){
 
             $(this).css({'border': '3px solid white'});
-            // $('.work-icon').fadeIn("700");
+            $('#look-at-me').fadeIn("500");
          }, function (){
             $(this).css({'border': '3px solid rgba(26, 188, 156, 1)'});
-            // $('.work-icon').fadeOut("200");
+            $('#look-at-me').fadeOut("100");
 
+      })
+
+      $('.front-and-center').hover(function(){
+
+            $(this).css({'padding': '2em'});
+         }, function (){
+            $(this).css({'padding': 'none'});
       })
 
 

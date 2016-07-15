@@ -2,6 +2,7 @@
 
 @import "work";
 @import "about";
+@import "land";
 
 
 html, body {
@@ -61,10 +62,6 @@ a {
 
 }
 
-.front-and-center {
-    display: block;
-    margin-top: 21.5em;
-}
 
 #Daniel-Pipkin {
     font-family: 'Lato', sans-serif;
@@ -86,13 +83,11 @@ a {
   display: none;
 }
 
-.fa-briefcase {
-  font-size: 160px !important;
-  position: absolute;
-  bottom: .6em;
-  left: 43%;
+#look-at-me {
   display: none;
 }
+
+
 
 
 #work {
