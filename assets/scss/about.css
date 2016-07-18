@@ -1,11 +1,27 @@
+a {
+  text-decoration: none; }
+
+#bio-title {
+  font-size: 80px;
+  position: relative;
+  color: black;
+  font-family: 'PT Sans', sans-serif;
+  color: #1abc9c;
+  margin-top: 40px; }
+
+#bio-container {
+  margin-top: 7em;
+  position: relative;
+  color: black;
+  width: 50%; }
+
 #about-wrapper {
   height: 1000px;
   width: 100%;
   background-color: white;
   position: absolute;
   left: 0;
-  top: 0;
-  color: #1abc9c; }
+  top: 0; }
   #about-wrapper #pip {
     position: fixed;
     top: 0;
@@ -20,41 +36,79 @@
   #about-wrapper .about-dilb {
     display: inline-block; }
   #about-wrapper #bigMe {
-    height: 100%;
-    border: 1px solid black;
-    background-color: red; }
-  #about-wrapper #bio-container {
-    border: 1px solid green; }
+    height: 514px;
+    width: 400px;
+    float: left;
+    color: white; }
   #about-wrapper #media {
-    position: absolute;
-    border: 1px solid blue;
-    width: 50%;
+    width: inherit;
     display: table;
-    right: 0;
-    top: 6em; }
+    color: #1abc9c;
+    float: right;
+    top: 0em; }
     #about-wrapper #media .media-icon {
       display: table-cell;
       height: 100px;
       width: 180px;
       font-size: 70px; }
-  #about-wrapper #contact-container {
-    position: absolute;
-    bottom: 0; }
-    #about-wrapper #contact-container .nodemailer-field {
-      display: block;
-      border-radius: .4em;
-      width: 60%;
-      margin-left: 20%;
-      margin-bottom: 40px;
-      font-size: 30px; }
-    #about-wrapper #contact-container input {
-      border: 1px solid black;
-      outline: none; }
-    #about-wrapper #contact-container textarea {
-      overflow: auto;
-      outline: none;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none; }
+  #about-wrapper #rotEight {
+    z-index: 10;
+    font-size: 60px;
+    font-family: 'PT Sans', sans-serif;
+    transform: rotate(45deg); }
+
+#m5 {
+  background-color: #3d3d3d; }
+
+#m4 {
+  background-color: #737373; }
+
+#m3 {
+  background-color: #888888; }
+
+#m2 {
+  background-color: #b9b9b9; }
+
+#m1 {
+  background-color: whitesmoke; }
+
+.about-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: inherit;
+  height: 37.1%;
+  background-color: #16a085;
+  width: calc(100% / 2.5); }
+
+.footer-items {
+  box-sizing: border-box;
+  text-align: center; }
+
+#contact {
+  margin-top: .5em;
+  color: white;
+  font-size: 60px;
+  text-align: center; }
+
+.git-hover {
+  color: white;
+  background-color: #076949 !important; }
+
+.in-hover {
+  color: white;
+  background-color: #0077b5 !important; }
+
+.tweet-hover {
+  color: white;
+  background-color: #00aced !important; }
+
+.eightTracks-hover {
+  color: white;
+  background-color: #fded35 !important; }
+
+.insta-hover {
+  color: white;
+  background-color: #ff5b36 !important; }
 
 /*# sourceMappingURL=about.css.map */

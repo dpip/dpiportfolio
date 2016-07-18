@@ -1,5 +1,25 @@
 
+a {
+  text-decoration: none;
+}
 
+#bio-title {
+  font-size: 80px;
+  position: relative;
+  color: black;
+  font-family: 'PT Sans', sans-serif;
+  color: #1abc9c;
+  margin-top: 40px;
+}
+
+#bio-container {
+  margin-top: 7em;
+  position: relative;
+  color: black;
+  width: 50%;
+
+
+}
 
 #about-wrapper {
 
@@ -10,7 +30,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #1abc9c;
+  // color: #1abc9c;
   // display: flex;
       #pip {
         position: fixed;
@@ -32,20 +52,22 @@
         display: inline-block;
       }
       #bigMe {
-        height: 100%;
-        border: 1px solid black;
-        background-color: red;
+        height: 514px;
+        width: 400px;
+        float: left;
+        color: white;
+        // border: 1px solid black;
       }
-      #bio-container {
-        border: 1px solid green;
-      }
+
       #media {
-        position: absolute;
-        border: 1px solid blue;
-        width: 50%;
+        // position: absolute;
+        // border-bottom: 1px solid rgb(136, 136, 136);
+        // width: 67%;
+        width: inherit;
         display: table;
-        right: 0;
-        top: 6em;
+        color: #1abc9c;
+        float: right;
+        top: 0em;
 
 
           .media-icon {
@@ -57,58 +79,126 @@
           }
       }
 
-      #contact-container {
-
-        position: absolute;
-        bottom: 0;
-
-          .nodemailer-field {
-            display: block;
-            border-radius: .4em;
-            width: 60%;
-            margin-left: 20%;
-            margin-bottom: 40px;
-            font-size: 30px;
-          }
-
-          input {
-            // text-align: center;
-            border: 1px solid black;
-            outline: none;
-          }
-
-          textarea {
-                overflow: auto;
-                outline: none;
-
-                -webkit-box-shadow: none;
-                -moz-box-shadow: none;
-                box-shadow: none;
-
-              }
-
-
-
-
-
-          #name {
-
-          }
-
-          #email {
-
-          }
-
-          #content {
-
-          }
-
-          #send-email {
-
-          }
-
+      #rotEight {
+        // 8tracks icon
+        z-index: 10;
+        font-size: 60px;
+        font-family: 'PT Sans', sans-serif;
+        transform: rotate(45deg);
       }
 
+      // #contact-container {
+      //
+      //   position: absolute;
+      //   bottom: 0;
+      //
+      //     .nodemailer-field {
+      //       display: block;
+      //       border-radius: .4em;
+      //       width: 60%;
+      //       margin-left: 20%;
+      //       margin-bottom: 40px;
+      //       font-size: 30px;
+      //     }
+      //
+      //     input {
+      //       // text-align: center;
+      //       border: 1px solid black;
+      //       outline: none;
+      //     }
+      //
+      //     textarea {
+      //           overflow: auto;
+      //           outline: none;
+      //
+      //           -webkit-box-shadow: none;
+      //           -moz-box-shadow: none;
+      //           box-shadow: none;
+      //
+      //         }
 
 
+
+
+          // #name {
+          //
+          // }
+          //
+          // #email {
+          //
+          // }
+          //
+          // #content {
+          //
+          // }
+          //
+          // #send-email {
+          //
+          // }
+
+      // }
+
+
+
+}
+
+
+#m5 {
+  background-color: rgb(61, 61, 61);
+}
+#m4 {
+  background-color: rgb(115, 115, 115);
+}
+#m3 {
+  background-color: rgb(136, 136, 136);
+}
+#m2 {
+  background-color: rgb(185, 185, 185);
+}
+#m1 {
+  background-color: rgb(245, 245, 245);
+}
+
+.about-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: inherit;
+  height: 37.1%;
+  background-color: rgb(22, 160, 133);
+  width: calc(100% / 2.5);
+  // display: inline-block;
+}
+
+.footer-items {
+  // width: inherit;
+  box-sizing: border-box;
+  text-align: center;
+}
+#contact {
+  margin-top: .5em;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+}
+
+.git-hover {
+  color: white;
+  background-color: rgb(7, 105, 73) !important;;
+}
+.in-hover {
+  color: white;
+  background-color: rgb(0, 119, 181) !important;
+}
+.tweet-hover {
+  color: white;
+  background-color: rgb(0, 172, 237) !important;
+}
+.eightTracks-hover {
+  color: white;
+  background-color: rgb(253, 237, 53) !important;
+}
+.insta-hover {
+  color: white;
+  background-color: rgb(255, 91, 54) !important;
 }
