@@ -11,6 +11,7 @@
   "dependencies": {
     "browserify": "^13.0.1",
     "express": "^4.13.4",
+    "instafeed.js": "^1.4.1",
     "nodemailer": "v0.7.1",
     "nodemailer-smtp-transport": "^2.5.0",
     "uniq": "^1.0.1",

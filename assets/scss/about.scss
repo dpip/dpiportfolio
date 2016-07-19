@@ -159,7 +159,7 @@ a {
   background-color: rgb(245, 245, 245);
 }
 
-.about-footer {
+.left-foot {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -168,6 +168,14 @@ a {
   background-color: rgb(22, 160, 133);
   width: calc(100% / 2.5);
   // display: inline-block;
+}
+.right-foot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 37.1%;
+  background-color: white;
+
 }
 
 .footer-items {
@@ -201,4 +209,15 @@ a {
 .insta-hover {
   color: white;
   background-color: rgb(255, 91, 54) !important;
+}
+
+.instahover:hover + git-commits {
+  display: block;
+}
+
+.git-commits {
+  display: none;
+}
+.git-show {
+  display: block;
 }

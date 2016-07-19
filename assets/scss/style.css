@@ -107,7 +107,7 @@ a {
 #m1 {
   background-color: whitesmoke; }
 
-.about-footer {
+.left-foot {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -115,6 +115,13 @@ a {
   height: 37.1%;
   background-color: #16a085;
   width: calc(100% / 2.5); }
+
+.right-foot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 37.1%;
+  background-color: white; }
 
 .footer-items {
   box-sizing: border-box;
@@ -145,6 +152,15 @@ a {
 .insta-hover {
   color: white;
   background-color: #ff5b36 !important; }
+
+.instahover:hover + git-commits {
+  display: block; }
+
+.git-commits {
+  display: none; }
+
+.git-show {
+  display: block; }
 
 @media (max-width: 620px) {
   #about {

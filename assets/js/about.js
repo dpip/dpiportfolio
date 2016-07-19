@@ -1,6 +1,8 @@
 
 dpip.controller( 'AboutController', function ($scope) {
 
+    // X oauth2 Gmail Nodemailer++++++++++++++++++++++++++++++++++
+
     var from,to,subject,text;
 
     $("#send_email").click(function(){
@@ -21,49 +23,60 @@ dpip.controller( 'AboutController', function ($scope) {
 
     });
 
+      // end Nodemailer++++++++++++++++++++++++++++++++++++++++++++++
+
+
+            // GITHUB
+            $('.git-commits').hide();
+            $('#m1').hover(function() {
+                $(this).toggleClass('git-hover');
+                $('.git-commits').toggle();
+              });
+            // LINKEDIN
+            $('#m2').hover(function() {
+                $(this).toggleClass('in-hover');
+              });
+            // TWITTER
+            $('#m3').hover(function() {
+                $(this).toggleClass('tweet-hover');
+              });
+            // EIGHTTRACKS
+            $('#m4').hover(function() {
+                $(this).toggleClass('eightTracks-hover');
+              });
+            // INSTAGRAM
+            $('#m5').hover(function() {
+                $(this).toggleClass('insta-hover');
+              });
 
 
 
-    $('#m1').hover(function() {
-        $(this).toggleClass('git-hover');
-      });
-    $('#m2').hover(function() {
-        $(this).toggleClass('in-hover');
-      });
-    $('#m3').hover(function() {
-        $(this).toggleClass('tweet-hover');
-      });
-    $('#m4').hover(function() {
-        $(this).toggleClass('eightTracks-hover');
-      });
-    $('#m5').hover(function() {
-        $(this).toggleClass('insta-hover');
-      });
+            // On click window routing for personal media
 
-      var git = "https://github.com/dpip";
-      var linkedIn = "https://www.linkedin.com/in/daniel-pipkin-a77555116";
-      var twitter = "https://twitter.com/pipmoffett";
-      var eightTracks = "http://8tracks.com/mix_sets/liked:1044774/1";
-      var instagram = "https://www.instagram.com/dpipnc/?hl=en";
+            var git = "https://github.com/dpip";
+            var linkedIn = "https://www.linkedin.com/in/daniel-pipkin-a77555116";
+            var twitter = "https://twitter.com/pipmoffett";
+            var eightTracks = "http://8tracks.com/mix_sets/liked:1044774/1";
+            var instagram = "https://www.instagram.com/dpipnc/?hl=en";
 
-      $('#m1').click(function() {
-        window.location.href = git ;
-      });
+            $('#m1').click(function() {
+              window.location.href = git ;
+            });
 
-      $('#m2').click(function() {
-        window.location.href = linkedIn ;
-      });
+            $('#m2').click(function() {
+              window.location.href = linkedIn ;
+            });
 
-      $('#m3').click(function(){
-        window.location.href = twitter ;
-      })
+            $('#m3').click(function(){
+              window.location.href = twitter ;
+            })
 
-      $('#m4').click(function(){
-        window.location.href = eightTracks ;
-      })
+            $('#m4').click(function(){
+              window.location.href = eightTracks ;
+            })
 
-      $('#m5').click(function(){
-        window.location.href = instagram ;
-      })
+            $('#m5').click(function(){
+              window.location.href = instagram ;
+            })
 
 });
