@@ -26,9 +26,31 @@
     }
     #trindy-work {
       position: absolute;
+      width: 335px;
+      height: 600px;
       left: 110px;
       top: 90px;
     }
+
+
+    .hide {
+      display: none;
+    }
+    
+    .trindy-hover {
+      background-color: rgba(33, 37, 33, .95);
+      color: white;
+      text-align: center;
+      font-size: 30px;
+      height: 600px;
+      width: 335px;
+      position: absolute;
+      left: 110px;
+      top: 90px;
+      border: 1px solid none;
+      z-index: 60;
+    }
+
     .future-works-wrap {
       margin-top: 7px;
       margin-right: 60px;

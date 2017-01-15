@@ -15,6 +15,7 @@ app.use(function (req, res, next) {
 var smtpTransport = nodemailer.createTransport(smtpTransport({
     // it was gmail.com
     service : "gmail",
+    debug: true,
     secureConnection : false,
     port: 465,
     auth : {

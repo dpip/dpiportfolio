@@ -1,6 +1,7 @@
 
 dpip.controller( 'AboutController', function ($scope) {
 
+
     // X oauth2 Gmail Nodemailer++++++++++++++++++++++++++++++++++
 
     var from,to,subject,text;
@@ -48,6 +49,9 @@ dpip.controller( 'AboutController', function ($scope) {
             $('#m5').hover(function() {
                 $(this).toggleClass('insta-hover');
               });
+            $('#m6').hover(function() {
+                $(this).toggleClass('reverb-hover');
+              });
 
 
 
@@ -58,6 +62,7 @@ dpip.controller( 'AboutController', function ($scope) {
             var twitter = "https://twitter.com/pipmoffett";
             var eightTracks = "http://8tracks.com/mix_sets/liked:1044774/1";
             var instagram = "https://www.instagram.com/dpipnc/?hl=en";
+            var reverbNation = "https://www.reverbnation.com/PipMoffett";
 
             $('#m1').click(function() {
               window.location.href = git ;
@@ -78,5 +83,11 @@ dpip.controller( 'AboutController', function ($scope) {
             $('#m5').click(function(){
               window.location.href = instagram ;
             })
+
+            $('#m6').click(function(){
+              window.location.href = reverbNation ;
+            })
+
+
 
 });

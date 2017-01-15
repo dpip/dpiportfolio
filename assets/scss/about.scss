@@ -17,7 +17,12 @@ a {
   position: relative;
   color: black;
   width: 50%;
+    span {
+      font-style: italic;
+      color: rgba(26, 188, 156, 1);
+      cursor: pointer;
 
+    }
 
 }
 
@@ -74,8 +79,8 @@ a {
             display: table-cell;
             height: 100px;
             width: 180px;
-            font-size: 70px
-            // display: inline-block;
+            font-size: 70px;
+            cursor: pointer;
           }
       }
 
@@ -87,62 +92,12 @@ a {
         transform: rotate(45deg);
       }
 
-      // #contact-container {
-      //
-      //   position: absolute;
-      //   bottom: 0;
-      //
-      //     .nodemailer-field {
-      //       display: block;
-      //       border-radius: .4em;
-      //       width: 60%;
-      //       margin-left: 20%;
-      //       margin-bottom: 40px;
-      //       font-size: 30px;
-      //     }
-      //
-      //     input {
-      //       // text-align: center;
-      //       border: 1px solid black;
-      //       outline: none;
-      //     }
-      //
-      //     textarea {
-      //           overflow: auto;
-      //           outline: none;
-      //
-      //           -webkit-box-shadow: none;
-      //           -moz-box-shadow: none;
-      //           box-shadow: none;
-      //
-      //         }
-
-
-
-
-          // #name {
-          //
-          // }
-          //
-          // #email {
-          //
-          // }
-          //
-          // #content {
-          //
-          // }
-          //
-          // #send-email {
-          //
-          // }
-
-      // }
-
-
 
 }
 
-
+#m6 {
+  background-color: black;
+}
 #m5 {
   background-color: rgb(61, 61, 61);
 }
@@ -213,6 +168,10 @@ a {
 
 .instahover:hover + git-commits {
   display: block;
+}
+.reverb-hover {
+  color: red;
+  background-color: rgb(245, 245, 245) !important;
 }
 
 .git-commits {

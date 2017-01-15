@@ -14,6 +14,10 @@ a {
   position: relative;
   color: black;
   width: 50%; }
+  #bio-container span {
+    font-style: italic;
+    color: #1abc9c;
+    cursor: pointer; }
 
 #about-wrapper {
   height: 1000px;
@@ -50,12 +54,16 @@ a {
       display: table-cell;
       height: 100px;
       width: 180px;
-      font-size: 70px; }
+      font-size: 70px;
+      cursor: pointer; }
   #about-wrapper #rotEight {
     z-index: 10;
     font-size: 60px;
     font-family: 'PT Sans', sans-serif;
     transform: rotate(45deg); }
+
+#m6 {
+  background-color: black; }
 
 #m5 {
   background-color: #3d3d3d; }
@@ -120,6 +128,10 @@ a {
 
 .instahover:hover + git-commits {
   display: block; }
+
+.reverb-hover {
+  color: red;
+  background-color: whitesmoke !important; }
 
 .git-commits {
   display: none; }
