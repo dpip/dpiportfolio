@@ -86,8 +86,101 @@ a {
   left: 0;
   width: inherit;
   height: 37.1%;
-  background-color: #16a085;
-  width: calc(100% / 2.5); }
+  background-color: #454545;
+  width: 400px; }
+  .left-foot .contact-info {
+    text-align: center;
+    font-size: 40px; }
+    .left-foot .contact-info #contact-text {
+      margin-top: 30px;
+      width: 100%;
+      text-align: center; }
+    .left-foot .contact-info ul {
+      margin-top: 10px;
+      float: left;
+      margin-left: 20px; }
+      .left-foot .contact-info ul li {
+        margin: 22px;
+        font-size: 20px;
+        float: left;
+        cursor: pointer; }
+      .left-foot .contact-info ul li:hover {
+        color: #1abc9c; }
+      .left-foot .contact-info ul #contact-email:hover #contact-hover-info-email {
+        display: block;
+        position: absolute;
+        left: 0px;
+        border-radius: 1em 1em 1em 1em; }
+      .left-foot .contact-info ul #contact-email:hover #psst1 {
+        display: block; }
+      .left-foot .contact-info ul #contact-resume:hover #contact-hover-info-resume {
+        display: block;
+        position: absolute;
+        left: 0px;
+        border-radius: 1em 1em 1em 1em; }
+      .left-foot .contact-info ul #contact-resume:hover #psst2 {
+        display: block; }
+      .left-foot .contact-info ul #contact-phone:hover #contact-hover-info-phone {
+        display: block;
+        position: absolute;
+        left: 0px;
+        border-radius: 1em 1em 1em 1em; }
+      .left-foot .contact-info ul #contact-phone:hover #psst3 {
+        display: block; }
+      .left-foot .contact-info ul #psst1 {
+        background-color: white;
+        display: block;
+        height: 24px;
+        position: absolute;
+        top: 230px;
+        left: 120px;
+        transform: rotate(29deg) skew(-35deg);
+        -moz-transform: rotate(90deg) skew(-35deg);
+        -ms-transform: rotate(90deg) skew(-35deg);
+        -o-transform: rotate(90deg) skew(-35deg);
+        -webkit-transform: rotate(90deg) skew(-35deg);
+        width: 20px;
+        display: none; }
+      .left-foot .contact-info ul #psst2 {
+        background-color: white;
+        display: block;
+        height: 24px;
+        position: absolute;
+        top: 230px;
+        left: 185px;
+        transform: rotate(29deg) skew(-35deg);
+        -moz-transform: rotate(45deg) skew(5deg);
+        -ms-transform: rotate(45deg) skew(5deg);
+        -o-transform: rotate(45deg) skew(5deg);
+        -webkit-transform: rotate(45deg) skew(5deg);
+        width: 20px;
+        display: none; }
+      .left-foot .contact-info ul #psst3 {
+        background-color: white;
+        display: block;
+        height: 24px;
+        position: absolute;
+        top: 230px;
+        left: 250px;
+        transform: rotate(29deg) skew(-35deg);
+        -moz-transform: rotate(90deg) skew(35deg);
+        -ms-transform: rotate(90deg) skew(35deg);
+        -o-transform: rotate(90deg) skew(35deg);
+        -webkit-transform: rotate(90deg) skew(35deg);
+        width: 20px;
+        display: none; }
+      .left-foot .contact-info ul .contact-hover-info {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        display: none;
+        margin-top: 50px;
+        margin-left: 100px;
+        border: 1px solid white;
+        width: inherit;
+        padding: 20px;
+        color: #1abc9c;
+        background-color: white; }
 
 .right-foot {
   position: absolute;
