@@ -1,13 +1,36 @@
+#menu-wrap {
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(136, 136, 136, 0.4);
+  height: 160px;
+  width: 80px;
+  right: 0;
+  top: 0;
+  color: white;
+  border-radius: 0em 0em 0em .5em; }
+  #menu-wrap .menu-icon {
+    font-size: 50px;
+    display: block;
+    margin-top: 10px; }
+  #menu-wrap .menu-icon:hover {
+    color: #1abc9c;
+    cursor: pointer; }
+
 a {
   text-decoration: none; }
 
 #bio-title {
-  font-size: 80px;
   position: relative;
   color: black;
-  font-family: 'PT Sans', sans-serif;
-  color: #1abc9c;
-  margin-top: 40px; }
+  margin-top: 0px;
+  font-size: 80px;
+  color: rgba(26, 188, 156, 0.1775); }
+
+i.fa.fa-code:before {
+  font-size: 600px;
+  position: absolute;
+  right: 20px;
+  top: -175px; }
 
 #bio-container {
   margin-top: 7em;

@@ -1,3 +1,56 @@
+$bp-small : 500px;
+$bp-med : 46.8em;
+$bp-large : 60em;
+$bp-xl : 93em;
+
+
+// <land queries>
+#land-wrap {
+  background-color: rgba(26, 188, 156, 1);
+  overflow-x: hidden;
+}
+
+@media all and (max-width: $bp-xl) {
+      #about {
+        margin-left: .6em;
+        // color: red;
+      }
+      #work {
+        margin-left: .55em;
+      }
+}
+@media all and (max-width: $bp-large) {
+      #about {
+        margin-left: -0.6em;
+        // color: blue;
+      }
+      #work {
+        margin-left: -0.7em;
+      }
+}
+@media all and (max-width: $bp-med) {
+      #about {
+        margin-left: -1em;
+        // color: green;
+      }
+      #work {
+        margin-left: -1.1em;
+      }
+}
+@media all and (max-width: $bp-small) {
+      #about {
+        margin-left: -1.8em;
+        // color: black;
+      }
+      #work {
+        margin-left: -1.9em;
+      }
+}
+
+
+// </land queries>
+
+
 #about {
 
     font-size: 20px;
@@ -18,9 +71,9 @@
 }
 #look-at-me {
   position: absolute;
-  top: 100px;
-  left: 45%;
-  font-size: 160px;
+  top: 60px;
+  left: 24px;
+  font-size: 120px;
   opacity: 0;
   transition: all 0.25s ease-in;
 
@@ -72,29 +125,25 @@
 
 }
 #work-icon {
-    font-size: 160px !important;
-    position: absolute;
-    bottom: .6em;
-    left: 43%;
     opacity: 0;
     transition: all 0.25s ease-in;
+    font-size: 110px !important;
+    position: absolute;
+    bottom: .5em;
+    left: 16px;
 
 }
-#work-icon-wrap:hover {
-  #work {
+#work:hover {
+
     border: 3px solid white;
     transition: all 0.25s ease-in;
 
-  }
   #work-icon {
     opacity: 1;
     position: block;
     transition: all 0.25s ease-in;
-  }
-}
 
-#land-wrap {
-  background-color: rgba(26, 188, 156, 1);
+  }
 }
 
 .media-icon-land {
@@ -103,6 +152,7 @@
     color: black;
     font-weight: bolder;
     font-size: 18px;
+    font-weight: lighter;
     font-family: 'Passion One', cursive;
     margin-bottom: -3px;
     margin-top: -20px;
@@ -111,6 +161,12 @@
 #land-icon-ng {
   position: absolute;
   margin-top: 27px;
+  margin-left: 50px;
+}
+#land-icon-sass {
+  position: absolute;
+  margin-top: 27px;
+  // margin-left: 50px;
 }
 #credentials {
   margin-left: -60px;
@@ -122,6 +178,7 @@
       .credentials-wrap {
         height: 0px;
         opacity: 0;
+        margin-left: -50px;
         transition: opacity .1s ease-in;
       }
       span {

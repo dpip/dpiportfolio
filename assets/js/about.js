@@ -54,6 +54,24 @@ dpip.controller( 'AboutController', function ($scope) {
               });
 
 
+              var count;
+              var interval;
+
+              $(".left-foot").on('mouseover', function() {
+                var div = $('body');
+
+                interval = setInterval(function(){
+                count = count || 3;
+                var pos = div.scrollTop();
+                div.scrollTop(pos + count);
+            }, 0);
+          }).on('mouseout', function() {
+        // Uncomment this line if you want to reset the speed on out
+        count = 0;
+        clearInterval(interval);
+    });
+
+
 
             // On click window routing for personal media
 
