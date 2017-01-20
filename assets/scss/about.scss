@@ -1,22 +1,23 @@
+$bp-small : 400px;
+$bp-med : 46.8em;
+$bp-large : 70em;
+$bp-xl : 93em;
+
+
 #menu-wrap {
   position: fixed;
   z-index: 100;
-  // border: 2px solid #1abc9c;
   background-color: rgba(136, 136, 136, 0.4);
-  // background-color: rgba(26, 188, 156, .6);
   height: 160px;
   width: 80px;
   right: 0;
   top: 0;
-  // color: #1abc9c;
   color: white;
   border-radius: 0em 0em 0em .5em;
   .menu-icon {
     font-size: 50px;
     display: block;
     margin-top: 10px;
-    // opacity: 0.6;
-
   }
   .menu-icon:hover {
     color: #1abc9c;
@@ -28,42 +29,36 @@ a {
 }
 
 #bio-title {
-  position: relative;
   color: black;
-  // font-family: 'PT Sans', sans-serif;
-  // color: #1abc9c;
-  margin-top: 0px;
   font-size: 80px;
-  // color: rgba(136, 136, 136, 0.0375);
-  color: rgba(26, 188, 156, 0.1775);
-
-
-
+  margin-bottom: 50px;
+  color: rgba(26, 188, 156, 0.2775);
 }
 i.fa.fa-code:before {
   font-size: 600px;
   position: absolute;
-  // left: 540px;
   right: 20px;
   top: -175px;
 }
 
 #bio-container {
-  margin-top: 7em;
+  margin-top: 4.5em;
   position: relative;
   color: black;
-  width: 50%;
+  width: 550px;
+  float: right;
+  margin-right: 14%;
     span {
       font-style: italic;
-      color: rgba(26, 188, 156, 1);
-      cursor: pointer;
+      font-size: 40px;
+      color: rgba(26, 188, 156, .4775);
+      margin-left: -10px;
 
     }
 
 }
 
 #about-wrapper {
-
 
   height: 1000px;
   width: 100%;
@@ -93,38 +88,42 @@ i.fa.fa-code:before {
       }
       #bigMe {
         height: 514px;
-        width: 400px;
+        width: 400px !important;
         float: left;
         color: white;
+        margin-left: 0;
         // border: 1px solid black;
+          img {
+            width: inherit;
+            height: inherit;
+          }
       }
 
+
       #media {
-        // position: absolute;
-        // border-bottom: 1px solid rgb(136, 136, 136);
-        // width: 67%;
         width: inherit;
         display: table;
         color: #1abc9c;
         float: right;
         top: 0em;
 
-
           .media-icon {
             display: table-cell;
             height: 100px;
-            width: 180px;
+            width: 200px;
             font-size: 70px;
             cursor: pointer;
           }
       }
 
       #rotEight {
-        // 8tracks icon
         z-index: 10;
-        font-size: 60px;
+        font-size: 70px;
         font-family: 'PT Sans', sans-serif;
         transform: rotate(45deg);
+          span {
+
+          }
       }
 
 
@@ -150,34 +149,33 @@ i.fa.fa-code:before {
 }
 
 .left-foot {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: inherit;
-  height: 37.1%;
-  // background-color: rgb(22, 160, 133);
+  height: 24em;
+  float: left;
   background-color: rgb(69, 69, 69);
   width: 400px;
     .contact-info {
       text-align: center;
       font-size: 40px;
+      width: 100%;
       #contact-text {
         margin-top: 30px;
-        width: 100%;
-        text-align: center;
       }
-      ul {
-        margin-top: 10px;
-        float: left;
-        margin-left: 20px;
-        li {
-          margin: 22px;
-          font-size: 20px;
-          float: left;
-          cursor: pointer;
 
-        }
-        li:hover {
+      #contact {
+        width: inherit;
+        display: table;
+        color: white;
+        float: right;
+        top: 0em;
+
+          .contact-icon {
+            display: table-cell;
+            height: 100px;
+            width: 200px;
+            font-size: 70px;
+            cursor: pointer;
+          }
+        i:hover {
           color: #1abc9c;
         }
         #contact-email:hover {
@@ -218,7 +216,7 @@ i.fa.fa-code:before {
         display: block;
         height: 24px;
         position: absolute;
-        top: 230px;
+        top: 220px;
         left: 120px;
         transform:             rotate( 29deg ) skew( -35deg );
         -moz-transform:    rotate(90deg ) skew( -35deg );
@@ -233,7 +231,7 @@ i.fa.fa-code:before {
         display: block;
         height: 24px;
         position: absolute;
-        top: 230px;
+        top: 220px;
         left: 185px;
         transform:             rotate( 29deg ) skew( -35deg );
         -moz-transform:    rotate(45deg ) skew(5deg );
@@ -248,9 +246,9 @@ i.fa.fa-code:before {
         display: block;
         height: 24px;
         position: absolute;
-        top: 230px;
+        top: 220px;
         left: 250px;
-        transform:             rotate( 29deg ) skew( -35deg );
+        transform:         rotate( 29deg ) skew( -35deg );
         -moz-transform:    rotate(90deg ) skew( 35deg );
         -ms-transform:     rotate(90deg ) skew( 35deg );
         -o-transform:      rotate(90deg ) skew( 35deg );
@@ -259,7 +257,6 @@ i.fa.fa-code:before {
         display: none;
         }
         .contact-hover-info {
-          // width: 100%;
           text-align: center;
           color: white;
           font-size: 20px;
@@ -275,14 +272,121 @@ i.fa.fa-code:before {
       }
     }
 }
-
+.about-feet {
+  display: inline-block;
+}
 .right-foot {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 37.1%;
+  height: 383px;
   background-color: white;
+  float: right;
+  width: 460px;
+    #contact-form-wrap {
+      width: 468px;
+      float: right;
+      margin-right: 10%;
+      margin-top: 0px;
+      background-color: white;
+      height: 100%;
+      #contact-form-title {
+        color: rgb(68,68,68);
+        margin-top: 30px;
+        width: 100%;
+        font-size: 40px;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+      }
+        #about-name {
+          outline: none;
+          border: 2px solid rgb(61,61,61);
+          border-radius: .5em;
+          width: 19em;
+          height: 3.6em;
+        }
+        #about-email {
+          outline: none;
+          border: 2px solid rgb(61,61,61);
+          border-radius: .5em;
+          width: 19em;
+          height: 3.6em;
+          margin-left: 1.6em;
+        }
+        #about-text-body {
+          outline: none;
+          border: 2px solid rgb(61,61,61);
+          border-radius: .5em;
+          width: 40em;
+          height: 6em;
+          float: left;
+        }
+        .about-contact-db {
+          display: inline-block;
+          float: left;
+          margin-top: 5em;
+          margin-bottom: 3em;
+        }
+        #contact-form-send {
+          color: rgb(61,61,61);
+          text-align: center;
+          float: right;
+          margin-right: 20px;
+          margin-top: 20px;
+          border: 2px solid rgb(61,61,61);
+          width: 60px;
+          height: 40px;
+          border-radius: .8em;
+          cursor: pointer;
 
+            i {
+              transform: rotate(20deg);
+              transform: rotateX(20deg);
+              font-size: 30px;
+              margin-top: 5px;
+              margin-right: 2.5px;
+              transition: all 0.25s ease-in;
+
+            }
+        }
+        #contact-form-send:hover {
+          color: #1abc9c;
+          border-color: #1abc9c;
+
+            i {
+              color: #1abc9c;
+              transform: rotate(40deg);
+              font-size: 30px;
+              margin-top: 5px;
+              margin-right: 2.5px;
+              transition: all 0.25s ease-in;
+
+
+            }
+        }
+        #contact-form-send:active {
+          color: #1abc9c;
+          opacity: 0.7;
+
+            i {
+              color: #1abc9c;
+              transform: rotate(40deg);
+              font-size: 30px;
+              margin-top: 5px;
+              margin-right: 2.5px;
+              transition: all 0.25s ease-in;
+
+
+            }
+        }
+    }
+}
+.about-feet {
+  width: calc(100% / 2);
+}
+.message-toggle {
+  // position: absolute;
+  // left: 20%;
+}
+#about-footer {
+  width: 100%;
 }
 
 .footer-items {
@@ -322,8 +426,8 @@ i.fa.fa-code:before {
   display: block;
 }
 .reverb-hover {
-  color: red;
-  background-color: rgb(245, 245, 245) !important;
+  color: rgb(245, 245, 245);
+  background-color: rgb(217, 30, 24) !important;
 }
 
 .git-commits {
@@ -332,3 +436,189 @@ i.fa.fa-code:before {
 .git-show {
   display: block;
 }
+
+// <about queries>
+
+
+@media all and (max-width: $bp-xl) {
+  #contact-form-wrap {
+    right: 8%;
+  }
+  .right-foot #contact-form-wrap {
+    margin-right: 15%;
+  }
+}
+
+@media all and (max-width: 80em) {
+  .right-foot #contact-form-wrap {
+    margin-right: 8%;
+  }
+}
+
+
+@media all and (max-width: $bp-large) {
+  #bio-container {
+    margin-right: 8%;
+  }
+  .right-foot #contact-form-wrap {
+    margin-right: 5%;
+  }
+
+}
+@media all and (max-width: 80em) {
+  #bio-container {
+    left: 525px;
+    position: absolute;
+    width: 40%;
+  }
+}
+@media all and (max-width: 65em) {
+  .right-foot #contact-form-wrap {
+    margin-right: 5px;
+    padding-left: 20px;
+    float: left;
+    margin-left: 10px;
+  }
+  .right-foot #contact-form-wrap {
+    width: 80%;
+    #about-name {
+      width: 100%;
+    }
+    #about-email {
+      width: 100%;
+      margin-left: 0em;
+    }
+    #about-text-body {
+      width: 99.5%;
+      margin-top: 2em;
+    }
+    .about-contact-db {
+      display: inline-block;
+      float: left;
+      margin-top: 2em;
+      margin-bottom: 0em;
+    }
+    #contact-form-send {
+      margin-right: -8px;
+    }
+  }
+
+}
+@media all and (max-width: 56em) {
+  #bio-container {
+    left: 440px;
+    position: absolute;
+    width: 40%;
+  }
+}
+
+@media all and (max-width: $bp-med) {
+  #bio-container {
+    left: 420px;
+    position: absolute;
+    width: 30%;
+    margin-top: 14em;
+    span {
+      font-size: 20px;
+      display: none;
+    }
+  }
+  #bio-title {
+    display: none;
+    margin-top: -50px;
+  }
+}
+@media all and (max-width: $bp-small) {
+  #bio-container {
+    position: relative;
+    width: 350px;
+    left: 0em;
+    font-size: 20px;
+    margin-top: 2.5em;
+    span {
+      font-style: italic;
+      font-size: 30px;
+      color: rgba(26, 188, 156, .4775);
+      margin-left: -10px;
+
+    }
+  }
+  #bio-title {
+    display: none;
+    font-size: 30px;
+    margin-top: -40px;
+  }
+  #media {
+    width: inherit;
+    color: #1abc9c;
+    float: right;
+    top: 0em;
+
+
+      .media-icon {
+        display: block;
+        height: 100px;
+        width: 200px;
+        font-size: 70px;
+        cursor: pointer;
+        float: left;
+      }
+  }
+  .left-foot {
+    background-color: white;
+    color: rgb(69, 69, 69);
+
+  }
+  .right-foot {
+    float: left;
+    position: relative;
+    bottom: 30px;
+    left: 0px;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(69, 69, 69);
+      #contact-form-wrap #contact-form-title {
+        color: white;
+      }
+
+      #contact-form-wrap #about-name {
+        width: 80%;
+        margin-left: 10%;
+      }
+      #contact-form-wrap #about-email {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10px;
+      }
+      #contact-form-wrap #about-text-body {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10px;
+      }
+
+      #contact-form-wrap #contact-form-send {
+        margin-right: 32px;
+        margin-top: 30px;
+        color: white;
+        border-color: white;
+      }
+  }
+  .about-feet {
+    width: 400px;
+  }
+  .left-foot .contact-info #contact {
+    color: #1abc9c;
+  }
+  .left-foot .contact-info #contact .contact-hover-info {
+    border: 2px solid #1abc9c;
+  }
+  .right-foot #contact-form-wrap {
+    margin-left: 0px;
+    width: 100%;
+    background-color: rgb(69, 69, 69);
+    padding-left: 0px;
+  }
+
+}
+
+// </about queries>

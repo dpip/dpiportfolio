@@ -71,11 +71,10 @@ a {
   text-decoration: none; }
 
 #bio-title {
-  position: relative;
   color: black;
-  margin-top: 0px;
   font-size: 80px;
-  color: rgba(26, 188, 156, 0.1775); }
+  margin-bottom: 50px;
+  color: rgba(26, 188, 156, 0.2775); }
 
 i.fa.fa-code:before {
   font-size: 600px;
@@ -84,14 +83,17 @@ i.fa.fa-code:before {
   top: -175px; }
 
 #bio-container {
-  margin-top: 7em;
+  margin-top: 4.5em;
   position: relative;
   color: black;
-  width: 50%; }
+  width: 550px;
+  float: right;
+  margin-right: 14%; }
   #bio-container span {
     font-style: italic;
-    color: #1abc9c;
-    cursor: pointer; }
+    font-size: 40px;
+    color: rgba(26, 188, 156, 0.4775);
+    margin-left: -10px; }
 
 #about-wrapper {
   height: 1000px;
@@ -115,9 +117,13 @@ i.fa.fa-code:before {
     display: inline-block; }
   #about-wrapper #bigMe {
     height: 514px;
-    width: 400px;
+    width: 400px !important;
     float: left;
-    color: white; }
+    color: white;
+    margin-left: 0; }
+    #about-wrapper #bigMe img {
+      width: inherit;
+      height: inherit; }
   #about-wrapper #media {
     width: inherit;
     display: table;
@@ -127,12 +133,12 @@ i.fa.fa-code:before {
     #about-wrapper #media .media-icon {
       display: table-cell;
       height: 100px;
-      width: 180px;
+      width: 200px;
       font-size: 70px;
       cursor: pointer; }
   #about-wrapper #rotEight {
     z-index: 10;
-    font-size: 60px;
+    font-size: 70px;
     font-family: 'PT Sans', sans-serif;
     transform: rotate(45deg); }
 
@@ -155,58 +161,57 @@ i.fa.fa-code:before {
   background-color: whitesmoke; }
 
 .left-foot {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: inherit;
-  height: 37.1%;
+  height: 24em;
+  float: left;
   background-color: #454545;
   width: 400px; }
   .left-foot .contact-info {
     text-align: center;
-    font-size: 40px; }
+    font-size: 40px;
+    width: 100%; }
     .left-foot .contact-info #contact-text {
-      margin-top: 30px;
-      width: 100%;
-      text-align: center; }
-    .left-foot .contact-info ul {
-      margin-top: 10px;
-      float: left;
-      margin-left: 20px; }
-      .left-foot .contact-info ul li {
-        margin: 22px;
-        font-size: 20px;
-        float: left;
+      margin-top: 30px; }
+    .left-foot .contact-info #contact {
+      width: inherit;
+      display: table;
+      color: white;
+      float: right;
+      top: 0em; }
+      .left-foot .contact-info #contact .contact-icon {
+        display: table-cell;
+        height: 100px;
+        width: 200px;
+        font-size: 70px;
         cursor: pointer; }
-      .left-foot .contact-info ul li:hover {
+      .left-foot .contact-info #contact i:hover {
         color: #1abc9c; }
-      .left-foot .contact-info ul #contact-email:hover #contact-hover-info-email {
+      .left-foot .contact-info #contact #contact-email:hover #contact-hover-info-email {
         display: block;
         position: absolute;
         left: 0px;
         border-radius: 1em 1em 1em 1em; }
-      .left-foot .contact-info ul #contact-email:hover #psst1 {
+      .left-foot .contact-info #contact #contact-email:hover #psst1 {
         display: block; }
-      .left-foot .contact-info ul #contact-resume:hover #contact-hover-info-resume {
+      .left-foot .contact-info #contact #contact-resume:hover #contact-hover-info-resume {
         display: block;
         position: absolute;
         left: 0px;
         border-radius: 1em 1em 1em 1em; }
-      .left-foot .contact-info ul #contact-resume:hover #psst2 {
+      .left-foot .contact-info #contact #contact-resume:hover #psst2 {
         display: block; }
-      .left-foot .contact-info ul #contact-phone:hover #contact-hover-info-phone {
+      .left-foot .contact-info #contact #contact-phone:hover #contact-hover-info-phone {
         display: block;
         position: absolute;
         left: 0px;
         border-radius: 1em 1em 1em 1em; }
-      .left-foot .contact-info ul #contact-phone:hover #psst3 {
+      .left-foot .contact-info #contact #contact-phone:hover #psst3 {
         display: block; }
-      .left-foot .contact-info ul #psst1 {
+      .left-foot .contact-info #contact #psst1 {
         background-color: white;
         display: block;
         height: 24px;
         position: absolute;
-        top: 230px;
+        top: 220px;
         left: 120px;
         transform: rotate(29deg) skew(-35deg);
         -moz-transform: rotate(90deg) skew(-35deg);
@@ -215,12 +220,12 @@ i.fa.fa-code:before {
         -webkit-transform: rotate(90deg) skew(-35deg);
         width: 20px;
         display: none; }
-      .left-foot .contact-info ul #psst2 {
+      .left-foot .contact-info #contact #psst2 {
         background-color: white;
         display: block;
         height: 24px;
         position: absolute;
-        top: 230px;
+        top: 220px;
         left: 185px;
         transform: rotate(29deg) skew(-35deg);
         -moz-transform: rotate(45deg) skew(5deg);
@@ -229,12 +234,12 @@ i.fa.fa-code:before {
         -webkit-transform: rotate(45deg) skew(5deg);
         width: 20px;
         display: none; }
-      .left-foot .contact-info ul #psst3 {
+      .left-foot .contact-info #contact #psst3 {
         background-color: white;
         display: block;
         height: 24px;
         position: absolute;
-        top: 230px;
+        top: 220px;
         left: 250px;
         transform: rotate(29deg) skew(-35deg);
         -moz-transform: rotate(90deg) skew(35deg);
@@ -243,7 +248,7 @@ i.fa.fa-code:before {
         -webkit-transform: rotate(90deg) skew(35deg);
         width: 20px;
         display: none; }
-      .left-foot .contact-info ul .contact-hover-info {
+      .left-foot .contact-info #contact .contact-hover-info {
         text-align: center;
         color: white;
         font-size: 20px;
@@ -256,12 +261,97 @@ i.fa.fa-code:before {
         color: #1abc9c;
         background-color: white; }
 
+.about-feet {
+  display: inline-block; }
+
 .right-foot {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 37.1%;
-  background-color: white; }
+  height: 383px;
+  background-color: white;
+  float: right;
+  width: 460px; }
+  .right-foot #contact-form-wrap {
+    width: 468px;
+    float: right;
+    margin-right: 10%;
+    margin-top: 0px;
+    background-color: white;
+    height: 100%; }
+    .right-foot #contact-form-wrap #contact-form-title {
+      color: #444444;
+      margin-top: 30px;
+      width: 100%;
+      font-size: 40px;
+      font-family: 'Lato', sans-serif;
+      text-align: center; }
+    .right-foot #contact-form-wrap #about-name {
+      outline: none;
+      border: 2px solid #3d3d3d;
+      border-radius: .5em;
+      width: 19em;
+      height: 3.6em; }
+    .right-foot #contact-form-wrap #about-email {
+      outline: none;
+      border: 2px solid #3d3d3d;
+      border-radius: .5em;
+      width: 19em;
+      height: 3.6em;
+      margin-left: 1.6em; }
+    .right-foot #contact-form-wrap #about-text-body {
+      outline: none;
+      border: 2px solid #3d3d3d;
+      border-radius: .5em;
+      width: 40em;
+      height: 6em;
+      float: left; }
+    .right-foot #contact-form-wrap .about-contact-db {
+      display: inline-block;
+      float: left;
+      margin-top: 5em;
+      margin-bottom: 3em; }
+    .right-foot #contact-form-wrap #contact-form-send {
+      color: #3d3d3d;
+      text-align: center;
+      float: right;
+      margin-right: 20px;
+      margin-top: 20px;
+      border: 2px solid #3d3d3d;
+      width: 60px;
+      height: 40px;
+      border-radius: .8em;
+      cursor: pointer; }
+      .right-foot #contact-form-wrap #contact-form-send i {
+        transform: rotate(20deg);
+        transform: rotateX(20deg);
+        font-size: 30px;
+        margin-top: 5px;
+        margin-right: 2.5px;
+        transition: all 0.25s ease-in; }
+    .right-foot #contact-form-wrap #contact-form-send:hover {
+      color: #1abc9c;
+      border-color: #1abc9c; }
+      .right-foot #contact-form-wrap #contact-form-send:hover i {
+        color: #1abc9c;
+        transform: rotate(40deg);
+        font-size: 30px;
+        margin-top: 5px;
+        margin-right: 2.5px;
+        transition: all 0.25s ease-in; }
+    .right-foot #contact-form-wrap #contact-form-send:active {
+      color: #1abc9c;
+      opacity: 0.7; }
+      .right-foot #contact-form-wrap #contact-form-send:active i {
+        color: #1abc9c;
+        transform: rotate(40deg);
+        font-size: 30px;
+        margin-top: 5px;
+        margin-right: 2.5px;
+        transition: all 0.25s ease-in; }
+
+.about-feet {
+  width: calc(100% / 2); }
+
+#about-footer {
+  width: 100%; }
 
 .footer-items {
   box-sizing: border-box;
@@ -297,8 +387,8 @@ i.fa.fa-code:before {
   display: block; }
 
 .reverb-hover {
-  color: red;
-  background-color: whitesmoke !important; }
+  color: whitesmoke;
+  background-color: #d91e18 !important; }
 
 .git-commits {
   display: none; }
@@ -306,6 +396,144 @@ i.fa.fa-code:before {
 .git-show {
   display: block; }
 
+@media all and (max-width: 93em) {
+  #contact-form-wrap {
+    right: 8%; }
+
+  .right-foot #contact-form-wrap {
+    margin-right: 15%; } }
+@media all and (max-width: 80em) {
+  .right-foot #contact-form-wrap {
+    margin-right: 8%; } }
+@media all and (max-width: 70em) {
+  #bio-container {
+    margin-right: 8%; }
+
+  .right-foot #contact-form-wrap {
+    margin-right: 5%; } }
+@media all and (max-width: 80em) {
+  #bio-container {
+    left: 525px;
+    position: absolute;
+    width: 40%; } }
+@media all and (max-width: 65em) {
+  .right-foot #contact-form-wrap {
+    margin-right: 5px;
+    padding-left: 20px;
+    float: left;
+    margin-left: 10px; }
+
+  .right-foot #contact-form-wrap {
+    width: 80%; }
+    .right-foot #contact-form-wrap #about-name {
+      width: 100%; }
+    .right-foot #contact-form-wrap #about-email {
+      width: 100%;
+      margin-left: 0em; }
+    .right-foot #contact-form-wrap #about-text-body {
+      width: 99.5%;
+      margin-top: 2em; }
+    .right-foot #contact-form-wrap .about-contact-db {
+      display: inline-block;
+      float: left;
+      margin-top: 2em;
+      margin-bottom: 0em; }
+    .right-foot #contact-form-wrap #contact-form-send {
+      margin-right: -8px; } }
+@media all and (max-width: 56em) {
+  #bio-container {
+    left: 440px;
+    position: absolute;
+    width: 40%; } }
+@media all and (max-width: 46.8em) {
+  #bio-container {
+    left: 420px;
+    position: absolute;
+    width: 30%;
+    margin-top: 14em; }
+    #bio-container span {
+      font-size: 20px;
+      display: none; }
+
+  #bio-title {
+    display: none;
+    margin-top: -50px; } }
+@media all and (max-width: 400px) {
+  #bio-container {
+    position: relative;
+    width: 350px;
+    left: 0em;
+    font-size: 20px;
+    margin-top: 2.5em; }
+    #bio-container span {
+      font-style: italic;
+      font-size: 30px;
+      color: rgba(26, 188, 156, 0.4775);
+      margin-left: -10px; }
+
+  #bio-title {
+    display: none;
+    font-size: 30px;
+    margin-top: -40px; }
+
+  #media {
+    width: inherit;
+    color: #1abc9c;
+    float: right;
+    top: 0em; }
+    #media .media-icon {
+      display: block;
+      height: 100px;
+      width: 200px;
+      font-size: 70px;
+      cursor: pointer;
+      float: left; }
+
+  .left-foot {
+    background-color: white;
+    color: #454545; }
+
+  .right-foot {
+    float: left;
+    position: relative;
+    bottom: 30px;
+    left: 0px;
+    width: 400px;
+    height: 500px;
+    background-color: #454545; }
+    .right-foot #contact-form-wrap #contact-form-title {
+      color: white; }
+    .right-foot #contact-form-wrap #about-name {
+      width: 80%;
+      margin-left: 10%; }
+    .right-foot #contact-form-wrap #about-email {
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 10px; }
+    .right-foot #contact-form-wrap #about-text-body {
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 10px; }
+    .right-foot #contact-form-wrap #contact-form-send {
+      margin-right: 32px;
+      margin-top: 30px;
+      color: white;
+      border-color: white; }
+
+  .about-feet {
+    width: 400px; }
+
+  .left-foot .contact-info #contact {
+    color: #1abc9c; }
+
+  .left-foot .contact-info #contact .contact-hover-info {
+    border: 2px solid #1abc9c; }
+
+  .right-foot #contact-form-wrap {
+    margin-left: 0px;
+    width: 100%;
+    background-color: #454545;
+    padding-left: 0px; } }
 #land-wrap {
   background-color: #1abc9c;
   overflow-x: hidden; }
@@ -465,7 +693,8 @@ html, body {
   background: #1abc9c;
   color: white;
   font-family: 'Lato', sans-serif;
-  text-align: center; }
+  text-align: center;
+  overflow-x: hidden; }
 
 ul {
   list-style: none; }
