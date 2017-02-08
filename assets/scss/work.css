@@ -1,52 +1,13 @@
-#work-wrap {
-  height: 1000px;
-  width: 100%;
-  background-color: white;
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #1abc9c; }
-  #work-wrap #back-home {
-    position: fixed;
-    left: 0;
-    top: 90px;
-    width: 50px;
-    height: 100px;
-    border: 1px solid #1abc9c; }
-    #work-wrap #back-home ul {
-      margin-left: -40px; }
-  #work-wrap #work-title {
-    font-size: 25px;
-    margin-top: 2em; }
-  #work-wrap #trindy-work {
-    position: absolute;
-    width: 335px;
-    height: 600px;
-    left: 110px;
-    top: 90px; }
-  #work-wrap .hide {
-    display: none; }
-  #work-wrap .trindy-hover {
-    background-color: rgba(33, 37, 33, 0.95);
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    height: 600px;
-    width: 335px;
-    position: absolute;
-    left: 110px;
-    top: 90px;
-    border: 1px solid none;
-    z-index: 60; }
-  #work-wrap .future-works-wrap {
-    margin-top: 7px;
-    margin-right: 60px;
-    float: right; }
-    #work-wrap .future-works-wrap .future-works {
-      height: 280px;
-      width: 400px;
-      border: 1px solid black;
-      list-style: none;
-      margin: 35px; }
+.container-work {
+  height: 75%;
+  overflow: hidden;
+  background-color: red; }
+  .container-work .w50 {
+    float: left;
+    width: 50%; }
+    .container-work .w50 #work-tease {
+      height: 40%;
+      width: 100%;
+      background-color: green; }
 
 /*# sourceMappingURL=work.css.map */

@@ -3,7 +3,6 @@
   <head>
 
           <!-- Styles -->
-    <link rel="stylesheet" href="assets/scss/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,900|PT+sans|Passion+One:900" rel="stylesheet" type="text/css">
           <!-- Hosted Libraries -->
@@ -15,22 +14,23 @@
 
     <!-- <script src="server.js"></script> -->
     <!-- <script src="bundle.js"></script> -->
+    <link rel="stylesheet" href="assets/scss/style.css">
 
    </head>
 
             <script>
                   $(window).load(function() {
-                    $('#loading').fadeOut(200);
+                    $('#loading').fadeOut(600);
                   });
             </script>
 
       <div id = "loading">
-        <img id="loading-image" src = "assets/images/ajax-loader.gif" alt="loading..." height="30px" width="30px">
+        <img id="loading-image" src = "assets/images/loading.svg" alt="loading..." height="70px" width="70px">
       </div>
 
       <body ng-app="dpip">
-
-        <div ng-view> </div>
+        <!-- <div class = "main"></div> -->
+        <div class = "ng-scope" ng-view> </div>
 
         <script src="assets/js/route.js"></script>
         <script src="assets/js/land.js"></script>

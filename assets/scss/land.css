@@ -1,6 +1,12 @@
 #land-wrap {
-  background-color: #1abc9c;
-  overflow-x: hidden; }
+  background-color: #16a085;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0; }
 
 @media all and (max-width: 93em) {
   #about {
@@ -28,8 +34,9 @@
     margin-left: -1.9em; } }
 #about {
   font-size: 20px;
+  font-weight: 700;
   letter-spacing: .15em;
-  cursor: pointer;
+  cursor: pointer !important;
   position: absolute;
   top: 2.2em;
   left: 43.8%;
@@ -37,7 +44,7 @@
   height: 26px;
   padding-top: 5px;
   padding-bottom: 5px;
-  border: 3px solid #1ABC9C;
+  border: 3px solid #16a085;
   transition: all 0.25s ease-in; }
 
 #look-at-me {
@@ -46,18 +53,21 @@
   left: 24px;
   font-size: 120px;
   opacity: 0;
-  transition: all 0.25s ease-in; }
+  transition: all 0.25s ease-in;
+  cursor: pointer; }
 
 #about-wrap:hover #about {
   border: 3px solid white;
-  transition: all 0.25s ease-in; }
+  transition: all 0.25s ease-in;
+  cursor: pointer; }
 #about-wrap:hover #look-at-me {
-  opacity: 1;
+  opacity: 0.6;
   position: block;
-  transition: all 0.25s ease-in; }
+  transition: all 0.25s ease-in;
+  cursor: pointer; }
 
 #Daniel-Pipkin {
-  font-family: 'Lato', sans-serif;
+  font-family: 'NeutraText-BoldAlt';
   font-size: 46px;
   font-weight: 800;
   cursor: pointer;
@@ -75,13 +85,16 @@
   bottom: 2.2em;
   left: 43.8%;
   font-size: 20px;
+  font-weight: 700;
   letter-spacing: .15em;
   cursor: pointer;
   width: 140px;
   height: 26px;
-  padding-top: 3px;
-  border: 3px solid #1ABC9C;
-  transition: all 0.25s ease-in; }
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 3px solid #16a085;
+  transition: all 0.25s ease-in;
+  cursor: pointer; }
 
 #work-icon {
   opacity: 0;
@@ -89,7 +102,8 @@
   font-size: 110px !important;
   position: absolute;
   bottom: .5em;
-  left: 16px; }
+  left: 16px;
+  cursor: pointer; }
 
 #work:hover {
   border: 3px solid white;
@@ -97,30 +111,57 @@
   #work:hover #work-icon {
     opacity: 1;
     position: block;
-    transition: all 0.25s ease-in; }
+    transition: all 0.25s ease-in;
+    opacity: 0.6; }
 
-.media-icon-land {
+#credentials .media-icon-land {
   display: inline-block; }
-  .media-icon-land #angular-icon-header {
+  #credentials .media-icon-land .land-icon-header {
+    display: none;
     color: black;
     font-weight: bolder;
     font-size: 18px;
     font-weight: lighter;
     font-family: 'Passion One', cursive;
-    margin-bottom: -3px;
-    margin-top: -20px; }
-
-#land-icon-ng {
-  position: absolute;
-  margin-top: 27px;
-  margin-left: 50px; }
-
-#land-icon-sass {
-  position: absolute;
-  margin-top: 27px; }
-
-#credentials {
-  margin-left: -60px; }
+    margin-bottom: -3px; }
+#credentials #land-icon-group {
+  margin-left: 48px; }
+  #credentials #land-icon-group img {
+    height: 100px;
+    width: 260px; }
+#credentials #land-icon-html {
+  height: 50px;
+  width: 50px;
+  opacity: 0.6; }
+  #credentials #land-icon-html img {
+    position: absolute;
+    height: inherit;
+    width: inherit; }
+#credentials #land-icon-css {
+  height: 80px;
+  width: 50px;
+  opacity: 0.6; }
+  #credentials #land-icon-css img {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    margin-top: 15px; }
+#credentials #land-icon-js {
+  height: 54px;
+  width: 45px;
+  opacity: 0.6; }
+  #credentials #land-icon-js img {
+    position: absolute;
+    height: inherit;
+    width: inherit; }
+#credentials #land-icon-ng {
+  height: 60px;
+  width: 50px;
+  opacity: 0.6; }
+  #credentials #land-icon-ng img {
+    position: absolute;
+    height: inherit;
+    width: inherit; }
 
 .front-and-center {
   display: block;
