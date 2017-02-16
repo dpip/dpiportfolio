@@ -1,14 +1,88 @@
 .container-work {
   height: 75%;
-  overflow: hidden;
-  background-color: red; }
+  overflow: hidden; }
+  .container-work #project-title {
+    width: 100%;
+    height: 20%;
+    background-color: black; }
   .container-work .w50 {
     float: left;
-    width: 50%; }
-    .container-work .w50 #work-tease {
-      height: 40%;
+    width: 40%;
+    height: 100%;
+    background-color: #282c34; }
+    .container-work .w50 #title-container {
+      height: 33.333%;
       width: 100%;
-      background-color: green; }
+      background-color: red;
+      opacity: 0.5;
+      background-size: 100% 200%; }
+    .container-work .w50 #project-description {
+      width: 100%;
+      height: 66.666%;
+      background-color: green;
+      opacity: 0.5; }
+  .container-work #project-view-container {
+    height: 66.666%;
+    width: 100%;
+    background-color: blue;
+    opacity: 0.5;
+    background-size: 100% 200%; }
+  .container-work #tools-container {
+    height: 33.333%;
+    width: 100%;
+    background-color: yellow;
+    opacity: 0.5;
+    background-size: 100% 200%; }
+  .container-work #right {
+    height: 100%;
+    width: 20%;
+    background-color: #282c34; }
+    .container-work #right .work-logo {
+      width: 100%;
+      height: calc(100% / 3) !important;
+      display: block;
+      float: left;
+      font-size: 40px; }
+    .container-work #right #purposeux {
+      background-color: #ECF0F1;
+      transition: all 0.25s ease-in;
+      cursor: pointer; }
+      .container-work #right #purposeux div {
+        margin-top: 25%; }
+    .container-work #right #purposeux:hover {
+      background-size: cover;
+      background: url(/assets/images/lucky_strike_ATC.jpg) no-repeat center;
+      background-size: 100% 100%;
+      transition: all 0.25s ease-in; }
+    .container-work #right #trind {
+      font-family: 'Sniglet', cursive;
+      font-weight: bolder;
+      background-color: #95A5A6;
+      text-decoration: underline;
+      transition: all 1s ease-in;
+      cursor: pointer; }
+      .container-work #right #trind div {
+        margin-top: 30%; }
+    .container-work #right #trind:hover {
+      background-size: cover;
+      background: url(/assets/images/trind-brian.png) no-repeat center;
+      background-size: 100% 260%;
+      transition: all 0.25s ease-in; }
+    .container-work #right #moffettcraft {
+      font-family: 'NeutraText-BoldAlt';
+      font-weight: bolder;
+      font-size: 80px;
+      color: #1f3a93;
+      background-color: #6C7A89;
+      transition: all 0.25s ease-in;
+      cursor: pointer; }
+      .container-work #right #moffettcraft div {
+        margin-top: 25%; }
+    .container-work #right #moffettcraft:hover {
+      background-size: cover;
+      background: url(/assets/images/boat.jpg) no-repeat center;
+      background-size: 100% 100%;
+      transition: all 0.25s ease-in; }
 
 #main {
   height: 100%; }
@@ -449,7 +523,6 @@ a {
   left: 0px;
   position: fixed;
   display: block;
-  opacity: .9;
   background-color: white;
   z-index: 99;
   text-align: center; }
