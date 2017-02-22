@@ -61,7 +61,7 @@
   transition: all 0.25s ease-in;
   cursor: pointer; }
 #about-wrap:hover #look-at-me {
-  opacity: 0.6;
+  opacity: 1;
   position: block;
   transition: all 0.25s ease-in;
   cursor: pointer; }
@@ -112,7 +112,7 @@
     opacity: 1;
     position: block;
     transition: all 0.25s ease-in;
-    opacity: 0.6; }
+    opacity: 1; }
 
 #credentials .media-icon-land {
   display: inline-block; }

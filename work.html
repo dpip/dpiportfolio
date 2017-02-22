@@ -1,34 +1,53 @@
-<div id="main">
-  <h1 class="postpone transition show">PROJECTS —</h1>
+<div id="main" class = "work-wrap" ng-controller = "WorkController">
+  <h1 class="postpone transition show projects-title">PROJECTS —</h1>
+    <div class = "projects-menu projects-title">
+    <div class = "projects-menu-options"><div>PurposeUX</div></div>
+    <div class = "projects-menu-options"><div>Trind</div></div>
+    <div class = "projects-menu-options"><div>MoffettCraft</div></div>
+    </div>
     <div id="about-view" class = "content full-height">
       <div class = "vCenter">
         <div class = "vCenterKid">
-          <div class = "container-work">
+          <div class = "container-work" >
             <div class ="fullHeight w50">
-
               <div id = "title-container">
+                <div><span>{{projects[0].title}}</span></div>
               </div>
-              <div id = "project-description">
-
-              </div>
-            </div>
-            <div class ="fullHeight w50">
-
-              <div id = "project-view-container">
-                
+              <div id = "project-description-container">
+                <div id = "project-description-body">
+                  Ugh church-key literally raw denim typewriter. Forage fanny pack blue bottle kogi, plaid farm-to-table taxidermy pork belly four dollar toast lyft austin twee hell of letterpress health goth. Hella gluten-free etsy, affogato blog yuccie cold-pressed iPhone umami humblebrag coloring book kitsch thundercats banjo slow-carb. Sriracha pour-over yr keffiyeh man bun, lomo hexagon pickled fashion axe kombucha aesthetic mixtape forage. Health goth selvage prism lumbersexual, viral master cleanse fanny pack unicorn twee 90's cornhole ethical locavore pitchfork meditation. Pabst bicycle rights jean shorts, ennui poutine affogato edison bulb activated charcoal vegan deep v freegan YOLO hammock trust fund XOXO. Glossier tattooed la croix, biodiesel gochujang bitters chambray vice.
+                </div>
               </div>
               <div id = "tools-container">
 
+                <div id = "who-what-when">Freelance Build — 2016{{purpose.description}}</div>
+
+                  <span>HTML5</span><span>CSS3</span><span>SASS</span><span>AngularJS</span>
+
+                <div id = "who-what-when"></div>
+
               </div>
             </div>
-              <div class ="fullHeight w50" id = "right">
+
+            <div class ="fullHeight w50">
+
+              <!-- <div id = "title-container">
+                <div><span>{{projects[0].title}}</span></div>
+              </div> -->
+              <div id = "project-view">
+                <div id = "view-body">                <img src = "assets/images/mac-laptop-png-13.png"></img></div>
+                <a href = "http://purposeux.com/"><div id = "view-project-wrap"><span id = "view-project">View Project</span></div></a>
+              </div>
+            </div>
+
+              <!-- <div class ="fullHeight w50" id = "right">
                 <div class = "work-logo" id = "purposeux"><div><img src = "assets/images/purpose_logo (1).png"></img></div></div>
                 <div class = "work-logo" id = "trind"><div>TRIND</div></div>
                 <div class = "work-logo" id = "moffettcraft"><div>M</div></div>
-            </div>
+            </div> -->
         </div>
       </div>
     </div>
   </div>
-<a href="/" data-svg="house" class="postpone svgLink links transition home link-nav show">home</a>
+<a href="/" data-svg="house" class="postpone svgLink links transition home link-nav show projects-home">home</a>
 </div>

@@ -1,18 +1,42 @@
 dpip.controller( 'WorkController', function ($scope) {
 
-$(document).ready(function() {
+  $scope.projects = [
+    {id: 1,
+      title: "PurposeUX",
+      tools: [{
+        html5: "HTML5",
+        css3: "CSS3",
+        sass: "SASS",
+        angular: "AngularJS",
+      }],
+      description: "llhjhlkjlkhkjhk",
+    },
+    {id: 2,
+      title: "TRIND",
+      tools: [{
+        html5: "HTML5",
+        css3: "CSS3",
+        sass: "SASS",
+        angular: "AngularJS",
+        ruby: "Ruby",
+      }],
+      description: "",
+    },
+    {id: 3,
+      title: "MoffettCraft",
+      tools: [{
+        html5: "HTML5",
+        css3: "CSS3",
+        sass: "SASS",
+        jquery: "JQuery",
+      }],
+      description: "",
+    },
+  ];
 
-  $('.trindy-hover').addClass('hide');
-
-  $('#trindy-work').hover(function() {
-    console.log('skdfadf');
-    $('.trindy-hover').removeClass('hide')
-  }, function() {
-    $('.trindy-hover').addClass('hide');
-});
-
-});
-
-
+  var purpose = $scope.projects[0];
+  var trind = $scope.projects[1];
+  var moffettcraft = $scope.projects[2];
+  
 
 });
