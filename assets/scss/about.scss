@@ -31,7 +31,7 @@ $bp-xl : 93em;
           vertical-align: middle;
             p {
               font-weight: 700;
-              font-size: 13px;
+              font-size: 1.333vw;
             }
           .container-about {
             height: 75%;
@@ -44,8 +44,8 @@ $bp-xl : 93em;
                 width: 50%;
               }
               #portrait {
-                background-size: cover;
-                background: url(/assets/images/IMG_22101.jpg) no-repeat center;
+                background-size: contain;
+                background: url(/assets/images/dpip_hero.jpeg) no-repeat center;
                 background-size: 100% 150%;
                 height: 40%;
                 width: 100%;
@@ -205,6 +205,7 @@ $bp-xl : 93em;
             .artists {
               height: 80%;
               position: relative;
+              cursor: pointer;
                 .title-music-container {
                   color: #111;
                   display: block;
@@ -242,15 +243,16 @@ $bp-xl : 93em;
                           width: 100%;
                           opacity: 0;
                           margin-top: 40%;
-                          font-size: 20px;
+                          font-size: 2vw;
                           font-weight: 900;
                           transition: all .25s;
-                          color: black;
-                          // color: white;
+                          // color: #16a085;
+                          // color: black;
+                          color: white;
                         }
                     }
                     .artist:hover {
-                      -webkit-filter: grayscale(50%);
+                      -webkit-filter: grayscale(10%);
                       // opacity: 0.4;
                         div {
                           opacity: 1;
@@ -265,16 +267,29 @@ $bp-xl : 93em;
       }
     }
 }
-  .home {
+  .skill_set {
     color: #16a085;
+    width: 100%;
     position: absolute;
     vertical-align: middle;
     bottom: 4%;
-    margin-left: -22px;
-    font-size: 20px;
+    left: 0;
+    font-size: 1.4vw;
     font-weight: 700;
-    cursor: pointer;
     line-height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+      .skills {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+          span {
+            color: #3b3b3b !important;
+          }
+      }
   }
   .home:hover {
     text-decoration: underline;
@@ -299,11 +314,3 @@ $bp-xl : 93em;
     background-color: rgba(59, 59, 59, 0.3);
 
   }
-
-
-
-
-
-
-
-// </about queries>

@@ -22,7 +22,7 @@
         vertical-align: middle; }
         #main #about-view .vCenter .vCenterKid p {
           font-weight: 700;
-          font-size: 13px; }
+          font-size: 1.333vw; }
         #main #about-view .vCenter .vCenterKid .container-about {
           height: 75%;
           overflow: hidden; }
@@ -32,8 +32,8 @@
             float: left;
             width: 50%; }
           #main #about-view .vCenter .vCenterKid .container-about #portrait {
-            background-size: cover;
-            background: url(/assets/images/IMG_22101.jpg) no-repeat center;
+            background-size: contain;
+            background: url(/assets/images/dpip_hero.jpeg) no-repeat center;
             background-size: 100% 150%;
             height: 40%;
             width: 100%;
@@ -138,7 +138,8 @@
             -webkit-filter: grayscale(20%); }
         #main #about-view .vCenter .social .artists {
           height: 80%;
-          position: relative; }
+          position: relative;
+          cursor: pointer; }
           #main #about-view .vCenter .social .artists .title-music-container {
             color: #111;
             display: block;
@@ -174,27 +175,37 @@
                 width: 100%;
                 opacity: 0;
                 margin-top: 40%;
-                font-size: 20px;
+                font-size: 2vw;
                 font-weight: 900;
                 transition: all .25s;
-                color: black; }
+                color: white; }
             #main #about-view .vCenter .social .artists .spotify-container .artist:hover {
-              -webkit-filter: grayscale(50%); }
+              -webkit-filter: grayscale(10%); }
               #main #about-view .vCenter .social .artists .spotify-container .artist:hover div {
                 opacity: 1; }
             #main #about-view .vCenter .social .artists .spotify-container .transition {
               transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
-.home {
+.skill_set {
   color: #16a085;
+  width: 100%;
   position: absolute;
   vertical-align: middle;
   bottom: 4%;
-  margin-left: -22px;
-  font-size: 20px;
+  left: 0;
+  font-size: 1.4vw;
   font-weight: 700;
-  cursor: pointer;
-  line-height: 1em; }
+  line-height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around; }
+  .skill_set .skills {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center; }
+    .skill_set .skills span {
+      color: #3b3b3b !important; }
 
 .home:hover {
   text-decoration: underline; }

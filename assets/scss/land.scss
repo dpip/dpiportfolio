@@ -3,6 +3,13 @@ $bp-med : 46.8em;
 $bp-large : 60em;
 $bp-xl : 93em;
 
+.welcome {
+  height: 1vh;
+  width: 20px;
+  border-radius: 10em;
+  background-color: white;
+}
+
 
 // <land queries>
 #land-wrap {

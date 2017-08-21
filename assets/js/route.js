@@ -20,7 +20,7 @@ dpip.config(['$routeProvider', '$locationProvider', function ($routeProvider, $l
       controller: 'WorkController'
     })
     .otherwise ({
-      redirectTo: '/land'
+      redirectTo: '/about'
     });
 
 

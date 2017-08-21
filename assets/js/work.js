@@ -1,5 +1,6 @@
 dpip.controller( 'WorkController', function ($scope) {
 
+
   $scope.projects = [
     {id: 1,
       title: "PurposeUX",
@@ -34,9 +35,8 @@ dpip.controller( 'WorkController', function ($scope) {
     },
   ];
 
-  var purpose = $scope.projects[0];
-  var trind = $scope.projects[1];
-  var moffettcraft = $scope.projects[2];
-  
+
+
+
 
 });
