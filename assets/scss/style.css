@@ -212,10 +212,11 @@
           #main #about-view .vCenter .vCenterKid .container-about #links {
             height: 20%;
             overflow: hidden; }
-            #main #about-view .vCenter .vCenterKid .container-about #links a {
+            #main #about-view .vCenter .vCenterKid .container-about #links button {
               color: white;
               display: block;
               position: relative;
+              z-index: 100;
               font-family: 'lato';
               font-size: 20px;
               font-weight: 900;
@@ -332,8 +333,7 @@
                 margin-top: 40%;
                 font-size: 2vw;
                 font-weight: 900;
-                transition: all .25s;
-                color: white; }
+                transition: all .25s; }
             #main #about-view .vCenter .social .artists .spotify-container .artist:hover {
               -webkit-filter: grayscale(10%); }
               #main #about-view .vCenter .social .artists .spotify-container .artist:hover div {

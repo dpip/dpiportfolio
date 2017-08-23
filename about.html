@@ -1,3 +1,5 @@
+
+
 <div id="main">
   <h1 class="postpone transition show">DANIEL PIPKIN —</h1>
     <div id="about-view" class = "content full-height">
@@ -19,18 +21,19 @@
                 </div>
               </div>
               <div id = "links">
-                <a id = "resume" class = "" href = "">
+                <button id = "resume" class = "" href = "">
                   <span class = "vCenter">
                     <div class = "overlay1"></div>
                     <span class = "vCenterKid">download my resume</span>
                   </span>
-                </a>
-                <a id = "contact" class = "" href = "">
-                  <span class = "vCenter">
-                    <div class = "overlay2"></div>
-                    <span class = "vCenterKid"></span>
-                  </span>
-                </a>
+                </button>
+
+                <button id = "contact" class = "" onclick="CopyToClipboard('copy')">
+                  <!-- <span class = "vCenter"> -->
+                    <div class = "copy">dpip.nc@gmail.com</div>
+
+                  <!-- </span> -->
+                </button>
               </div>
             </div>
 
@@ -77,4 +80,21 @@
           <div class  ="skills"><span>ANGULAR</span>JS</div>
           <div class  ="skills"><span>NODE</span>JS</div>
         </div>
+
+        <script>
+        function CopyToClipboard(containerid) {
+         if (document.selection) {
+             var range = document.body.createTextRange();
+             range.moveToElementText(document.getElementById(containerid));
+             range.select().createTextRange();
+             document.execCommand("Copy");
+
+         } else if (window.getSelection) {
+             var range = document.createRange();
+              range.selectNode(document.getElementById(containerid));
+              window.getSelection().addRange(range);
+              document.execCommand("Copy");
+              alert("text copied")
+         }};
+        </script>
 </div>

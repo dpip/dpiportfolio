@@ -74,11 +74,12 @@ $bp-xl : 93em;
               #links {
                 height: 20%;
                 overflow: hidden;
-                  a {
+                  button {
                     // background-color: #16a085;
                     color: white;
                     display: block;
                     position: relative;
+                    z-index: 100;
                     font-family: 'lato';
                     font-size: 20px;
                     font-weight: 900;
@@ -248,7 +249,7 @@ $bp-xl : 93em;
                           transition: all .25s;
                           // color: #16a085;
                           // color: black;
-                          color: white;
+                          // color: white;
                         }
                     }
                     .artist:hover {
@@ -313,4 +314,8 @@ $bp-xl : 93em;
     z-index: 20;
     background-color: rgba(59, 59, 59, 0.3);
 
+  }
+
+  input {
+    // opacity: 0;
   }

@@ -62,13 +62,13 @@ dpip.controller( 'AboutController', function ($scope) {
 
             // On click window routing for personal media
 
-            var git = "https://github.com/dpip";
-            var linkedIn = "https://www.linkedin.com/in/daniel-pipkin-a77555116";
-            var twitter = "https://twitter.com/pipmoffett";
-            var eightTracks = "http://8tracks.com/mix_sets/liked:1044774/1";
-            var instagram = "https://www.instagram.com/dpipnc/?hl=en";
-            var reverbNation = "https://www.reverbnation.com/PipMoffett";
-            var spotify = "https://open.spotify.com/user/danielpipkin";
+            let git = "https://github.com/dpip";
+            let linkedIn = "https://www.linkedin.com/in/daniel-pipkin-a77555116";
+            let twitter = "https://twitter.com/pipmoffett";
+            let eightTracks = "http://8tracks.com/mix_sets/liked:1044774/1";
+            let instagram = "https://www.instagram.com/dpipnc/?hl=en";
+            let reverbNation = "https://www.reverbnation.com/PipMoffett";
+            let spotify = "https://open.spotify.com/user/danielpipkin";
 
             $('#m1').click(function() {
               window.location.href = git ;
@@ -96,7 +96,24 @@ dpip.controller( 'AboutController', function ($scope) {
 
             $("#resume").hover(function(){
               console.log("hover");
-              $(this).toggleClass("overlay1");  //Toggle the active class to the area is hovered
+              $(this).toggleClass("overlay1");
             });
+
+
+            //  function CopyToClipboard(containerid) {
+            //   if (document.selection) {
+            //       var range = document.body.createTextRange();
+            //       range.moveToElementText(document.getElementById(containerid));
+            //       range.select().createTextRange();
+            //       document.execCommand("Copy");
+             //
+            //   } else if (window.getSelection) {
+            //       var range = document.createRange();
+            //        range.selectNode(document.getElementById(containerid));
+            //        window.getSelection().addRange(range);
+            //        document.execCommand("Copy");
+            //        alert("text copied")
+            //   }}
+
 
 });
